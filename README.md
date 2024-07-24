@@ -36,3 +36,25 @@ To get started with the backend project, follow these steps:
 - Define the necessary environment variables in the `.env` file.
 
 4. Start dev the server: `npm run dev`
+
+## Frontend
+
+### Project Structure
+
+The frontend project follows a modular structure to ensure maintainability and scalability. Here is an overview of the project structure:
+
+- **Layout**: This directory contains the layout related comopnents
+- **Models**: This directory contains the model files that define the data structures and interactions with the api and end user.
+- **Http**: This directory contains the api client files that interact with external APIs.
+- **Modules**: This directory contains the modules of the app.
+- **Utils**: This directory contains utility functions and helper files used throughout the project.
+
+### Getting Started
+
+To get started with the backend project, follow these steps:
+
+1. Clone the repository: https://github.com/ace-js/quote-generator
+
+2. Install dependencies: cd frontend && npm install
+
+3. Start dev the server: `npm run dev`

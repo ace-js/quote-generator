@@ -16,8 +16,26 @@ describe('QuotesService', () => {
 
   it('should fetch random quotes successfully', async () => {
     const quotesMock: Quote[] = [
-      { id: '1', author: 'Author 1', content: 'Quote 1', tags: ['tag1'] },
-      { id: '2', author: 'Author 2', content: 'Quote 2', tags: ['tag2'] },
+      {
+        _id: '1',
+        dateAdded: '2022-01-01T00:00:00.000Z',
+        dateModified: '2022-01-01T00:00:00.000Z',
+        author: 'Author 1',
+        content: 'Quote 1',
+        tags: ['tag1'],
+        authorSlug: '',
+        length: 0
+      },
+      {
+        _id: '2',
+        dateAdded: '2022-01-01T00:00:00.000Z',
+        dateModified: '2022-01-01T00:00:00.000Z',
+        author: 'Author 2',
+        content: 'Quote 2',
+        tags: ['tag1', 'tag2'],
+        authorSlug: '',
+        length: 0
+      },
     ];
 
     getStub.resolves({ data: quotesMock });
